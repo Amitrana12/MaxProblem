@@ -19,9 +19,12 @@ namespace MaxNumberWithGenric
             FindMax<float> second = new FindMax<float>(floatArray);
             string[] stringArray = { "111", "222", "333", "55", "999" };
             FindMax<string> third = new FindMax<string>(stringArray);
-            Console.WriteLine(first.FindMaxValue());
-            Console.WriteLine(second.FindMaxValue());
-            Console.WriteLine(third.FindMaxValue());
+
+            first.PrintMaxValue();
+            Console.WriteLine("=================================");
+            second.PrintMaxValue();
+            Console.WriteLine("=================================");
+            third.PrintMaxValue();
         }
     }
 }
